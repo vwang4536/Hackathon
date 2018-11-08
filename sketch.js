@@ -1,23 +1,29 @@
-var sk = function (sketch) {
-  sketch.setup = function() {
+
+console.log('hi')
+  function setup() {
 // put setup code here
-let newCanvas = sketch.createCanvas(windowWidth, document.body.clientHeight);
-newCanvas.style = ('pointer-events', 'none')
-newCanvas.position(0,0);
-
-sketch.clear();
-}
-sketch.draw = function() {
-//  background(0,60)
-  sketch.stroke(0);
-  sketch.strokeWeight(4);
-  if (sketch.mouseIsPressed) {line(sketch.mouseX, sketch.mouseY, sketch.pmouseX, sketch.pmouseY);}
-// put drawing code here
-}
-
-function sketch.keyPressed() {
-  if (sketch.key === 'a') {
-      //save('myCanvas.png');
+// code sets up canvas
+    console.log('sketch started')
+    let c = createCanvas(400,400);
+    c.position(0,0);
+  //  let newCanvas = createCanvas(document.body.clientWidth, document.body.clientHeight);
+  //  newCanvas.style = ('pointer-events', 'none')
+  //  newCanvas.position(0,0);
+  //  clear();
   }
-}
-var newP5 = new p5(sk)
+
+  function draw() 
+    background(0);
+    console.log('sketch started')
+  //   stroke(0);
+  //   strokeWeight(4);
+  //       if (mouseIsPressed) {
+  //       sketch.line(mouseX, mouseY, pmouseX, pmouseY);
+  // }
+// put drawing code here
+  }
+
+//code for screenshotting
+
+
+
